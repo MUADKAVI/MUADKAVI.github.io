@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="GoodAd vs BadAd — an interactive experiment proving relevance beats aesthetics in SaaS advertising." />
+  <title>GoodAd vs BadAd</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- ═══ GAME HEADER (hidden on landing) ═══ -->
+    <header id="game-header" class="game-header hidden">
+      <div class="logo"><span class="logo-dot"></span> Adorro</div>
+      <div class="header-stats">
+        <div class="header-stat">Blogs read: <strong id="round-count">0</strong></div>
+        <button id="finish-btn" class="finish-btn">I'm Done</button>
+      </div>
+    </header>
+
+    <!-- ═══ LANDING SCREEN ═══ -->
+    <section id="landing-screen" class="landing">
+      <!-- Steve Jobs Character -->
+      <div class="jobs-character">
+        <div class="jobs-speech-bubble">
+          <p id="jobs-quote">"Design is not just what it looks like. Design is how it works."</p>
+        </div>
+        <img src="/jobs.png" alt="Pixel Steve Jobs" class="jobs-img" />
+      </div>
+
+      <h1>Good Ad<br>VS<br>Bad Ad</h1>
+      <p class="landing-sub">Browse some SaaS blogs. React to the ads. Results will be out on 𝕏 on 18th May</p>
+
+      <!-- Start Button -->
+      <div class="start-container">
+        <button id="start-btn" class="start-btn">Start Experiment</button>
+      </div>
+
+
+    </section>
+
+    <!-- ═══ BLOG SITE (fake website) ═══ -->
+    <section id="blog-site" class="blog-site hidden">
+      <nav class="blog-nav">
+        <div class="blog-name">
+          <div id="blog-icon" class="blog-name-icon">B</div>
+          <span id="blog-site-name">BlogName</span>
+        </div>
+        <div class="blog-nav-links">
+          <span>Articles</span>
+          <span>About</span>
+          <span>Newsletter</span>
+        </div>
+      </nav>
+      <article class="blog-article">
+        <div class="blog-meta">
+          <span id="blog-niche" class="blog-niche-tag">NICHE</span>
+          <span id="blog-read-time">5 min read</span>
+        </div>
+        <h1 id="blog-title">Article Title</h1>
+        <p id="blog-subtitle" class="subtitle">Subtitle goes here</p>
+        <div class="blog-author">
+          <div id="author-avatar" class="author-avatar">A</div>
+          <div class="author-info">
+            <span id="author-name" class="author-name">Author Name</span>
+            <span id="author-detail" class="author-detail">May 10, 2026 · Software Engineer</span>
+          </div>
+        </div>
+        <img id="blog-hero" class="blog-hero-img" src="" alt="Blog hero image" />
+        <div id="blog-body" class="blog-body"></div>
+      </article>
+    </section>
+
+    <!-- ═══ AD OVERLAY ═══ -->
+    <div id="ad-overlay" class="ad-overlay">
+      <div id="ad-banner" class="ad-banner"></div>
+    </div>
+
+    <!-- ═══ END SCREEN ═══ -->
+    <section id="end-screen" class="end-screen hidden">
+      <div class="jobs-character jobs-character-end">
+        <div class="jobs-speech-bubble">
+          <p>"The people who are crazy enough to think they can change advertising... are the ones who do."</p>
+        </div>
+        <img src="/jobs.png" alt="Pixel Steve Jobs" class="jobs-img" />
+      </div>
+
+      <h1>Your data has been recorded.</h1>
+      <p class="end-subtitle">Along with <strong id="total-players">hundreds of</strong> others.</p>
+      <p class="end-body">In one week, we'll reveal what everyone chose.<br>Did relevance beat aesthetics? Or did
+        beautiful design win?</p>
+
+      <div class="end-stats-mini">
+        <div class="end-stat">
+          <span class="end-stat-value" id="end-rounds">0</span>
+          <span class="end-stat-label">Blogs read</span>
+        </div>
+        <div class="end-stat">
+          <span class="end-stat-value" id="end-ads">0</span>
+          <span class="end-stat-label">Ads seen</span>
+        </div>
+        <div class="end-stat">
+          <span class="end-stat-value" id="end-clicked">0</span>
+          <span class="end-stat-label">Ads clicked</span>
+        </div>
+      </div>
+
+      <a href="https://x.com/AdityaChau63417" target="_blank" class="x-cta">
+        Follow on X for the results →
+      </a>
+      <button id="play-again-btn" class="play-again-btn">Play Again</button>
+    </section>
+
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
