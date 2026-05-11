@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  // Set base to your repository name for github.io deployment
-  base: '/GoodAdvsBadAd/', 
+  // Set base to '/' for a custom domain or MUADKAVI.github.io root
+  base: '/', 
 })
